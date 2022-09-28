@@ -12,18 +12,22 @@ return require('packer').startup(function(use)
     }  
     use {
         'nvim-telescope/telescope.nvim',                 -- fuzzy finder
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = 'nvim-lua/plenary.nvim'
     }
     use {
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
 
-    -- [[ Theme ]]
-    use { "EdenEast/nightfox.nvim", tag = "v1.0.0" }
-    
     -- [[ Dev ]]
-    use { 'windwp/nvim-autopairs' }                    -- auto close brackets, etc.
-    use { '0xHyoga/starknet-vim' }                       -- write Cairo
-    use { 'tpope/vim-fugitive'}
+    use 'windwp/nvim-autopairs'                    -- auto close brackets, etc.
+    use '0xHyoga/starknet-vim'                     -- write Cairo
+    use 'tpope/vim-fugitive'                       -- git integration
+    use 'sbdchd/neoformat'                         -- format code
+    use 'preservim/vim-markdown'                   -- markdow integration
+    use 'iamcco/markdown-preview.nvim'             -- markdown preview
+    use {
+        'shougo/deoplete.nvim',
+        --requires = {{ 'roxma/nvim-yarp' }, {'roxma/vim-hug-neovim-rpc'} }
+    }
 end)

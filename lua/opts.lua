@@ -1,8 +1,7 @@
 --[[ opts.lua ]]
-local opt = vim.opt
-
+local opt   = vim.opt
+local g     = vim.g
 -- [[ Context ]]
---opt.colorcolumn = '80'           -- str:  Show col for max line length
 opt.number = true                -- bool: Show line numbers
 opt.scrolloff = 4                -- int:  Min num lines of context
 
@@ -12,7 +11,6 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
---vim.cmd('colorscheme dracula')       -- cmd:  Set the colorscheme
 
 -- [[ Search ]]
 opt.ignorecase = true            -- bool: Ignore case in search patterns
@@ -29,3 +27,7 @@ opt.tabstop = 4                  -- num:  Number of spaces tabs count for
 -- [[ Splits ]]
 opt.splitright = true            -- bool: Place new window to right of current one
 opt.splitbelow = true            -- bool: Place new window below the current one
+
+-- [[ Ocaml ]]
+-- g.opamshare = substitute(system('opam config var share'),'\n$','','''')
+-- execute "set rtp+=" . g.opamshare . "/merlin/vim"

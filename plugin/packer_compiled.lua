@@ -74,15 +74,25 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["deoplete.nvim"] = {
+    loaded = true,
+    path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
+    url = "https://github.com/shougo/deoplete.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nightfox.nvim"] = {
+  ["markdown-preview.nvim"] = {
     loaded = true,
-    path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
+    path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  neoformat = {
+    loaded = true,
+    path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -123,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
   }
 }
 

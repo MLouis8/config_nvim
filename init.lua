@@ -16,6 +16,8 @@ require('plug')      -- Plugins
 
 -- PLUGINS
 require('nvim-tree').setup()
-require('lualine').setup()
+require('lualine').setup{
+    options = { theme = 'gruvbox' }
+}
 require('nvim-autopairs').setup()
-require('nvim-web-devicons').setup()
+require('deoplete').setup()
