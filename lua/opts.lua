@@ -1,6 +1,8 @@
 --[[ opts.lua ]]
 local opt   = vim.opt
 local g     = vim.g
+local cmd   = vim.cmd
+
 -- [[ Context ]]
 opt.number = true                -- bool: Show line numbers
 opt.scrolloff = 4                -- int:  Min num lines of context
@@ -11,6 +13,9 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
+cmd([[hi Pmenu guifg=DarkGray guibg=DarkGray]])
+cmd([[hi PmenuSbar guifg=NONE guibg=DarkGray]])
+cmd([[hi NvimTreeWinSeparator guifg=#FFFFFF guibg=NONE]])
 
 -- [[ Search ]]
 opt.ignorecase = true            -- bool: Ignore case in search patterns
@@ -27,6 +32,9 @@ opt.tabstop = 4                  -- num:  Number of spaces tabs count for
 -- [[ Splits ]]
 opt.splitright = true            -- bool: Place new window to right of current one
 opt.splitbelow = true            -- bool: Place new window below the current one
+
+-- [[ Deoplete ]]
+g['deoplete#enable_at_startup'] = 1
 
 -- [[ Ocaml ]]
 -- g.opamshare = substitute(system('opam config var share'),'\n$','','''')

@@ -28,6 +28,9 @@ return require('packer').startup(function(use)
     use 'iamcco/markdown-preview.nvim'             -- markdown preview
     use {
         'shougo/deoplete.nvim',
-        --requires = {{ 'roxma/nvim-yarp' }, {'roxma/vim-hug-neovim-rpc'} }
+        requires = {
+            { 'roxma/nvim-yarp' },
+            {'roxma/vim-hug-neovim-rpc'}
+        }
     }
 end)
