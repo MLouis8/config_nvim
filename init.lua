@@ -18,5 +18,4 @@ require('plug')      -- Plugins
 require('nvim-tree').setup()
 require('lualine').setup()
 require('nvim-autopairs').setup()
---require('nvim-web-devicons').setup()
-require('vgit').setup()
+require('nvim-web-devicons').setup()

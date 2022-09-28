@@ -25,10 +25,5 @@ return require('packer').startup(function(use)
     -- [[ Dev ]]
     use { 'windwp/nvim-autopairs' }                    -- auto close brackets, etc.
     use { '0xHyoga/starknet-vim' }                       -- write Cairo
-    use {
-        'tanvirtin/vgit.nvim',
-        requires = {
-            'nvim-lua/plenary.nvim'
-            }
-    }
+    use { 'tpope/vim-fugitive'}
 end)
