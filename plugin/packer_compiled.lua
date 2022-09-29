@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["nvim-yarp"] = {
+    loaded = true,
+    path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/nvim-yarp",
+    url = "https://github.com/roxma/nvim-yarp"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-hug-neovim-rpc"] = {
+    loaded = true,
+    path = "/Users/louismilhaud/.local/share/nvim/site/pack/packer/start/vim-hug-neovim-rpc",
+    url = "https://github.com/roxma/vim-hug-neovim-rpc"
   },
   ["vim-markdown"] = {
     loaded = true,
