@@ -13,8 +13,7 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
-cmd([[hi Pmenu guifg=DarkGray guibg=DarkGray]])
-cmd([[hi PmenuSbar guifg=NONE guibg=DarkGray]])
+cmd([[hi Pmenu ctermbg=Gray]])
 cmd([[hi NvimTreeWinSeparator guifg=#FFFFFF guibg=NONE]])
 
 -- [[ Search ]]

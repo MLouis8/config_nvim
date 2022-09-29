@@ -15,7 +15,20 @@ require('keys')      -- Keymaps
 require('plug')      -- Plugins
 
 -- PLUGINS
-require('nvim-tree').setup()
+require('nvim-tree').setup({
+    view = {
+		adaptive_size = true,
+		width = 20,
+        mappings = {
+            list = {
+        			{ key = "u", action = "dir_up" },
+      			},
+    		},
+  	},
+  	filters = {
+    		dotfiles = true,
+  	},
+})
 require('lualine').setup{
     options = { theme = 'gruvbox' }
 }
