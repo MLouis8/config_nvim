@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
     -- [[ Dev ]]
     use 'windwp/nvim-autopairs'                    -- auto close brackets, etc.
     use '0xHyoga/starknet-vim'                     -- write Cairo
+    use 'dense-analysis/ale'                       -- Asynchronous Lint Engine compatible with starknet vi
     use 'tpope/vim-fugitive'                       -- git integration
     use 'sbdchd/neoformat'                         -- format code
     use 'preservim/vim-markdown'                   -- markdow integration
