@@ -1,12 +1,13 @@
 --[[ init.lua ]]
+local g = vim.g
 
 -- LEADER
 -- These keybindings need to be defined before the first /
 -- is called; otherwise, it will default to "\"
-vim.g.mapleader = ","
-vim.g.localleader = "\\"
-vim.g.loaded = 1
-vim.g.loaded_netrwPlugin = 1
+g.mapleader = ","
+g.localleader = "\\"
+g.loaded = 1
+g.loaded_netrwPlugin = 1
 
 -- IMPORTS
 require('vars')      -- Variables

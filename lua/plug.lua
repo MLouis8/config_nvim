@@ -18,7 +18,12 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
-
+    use {
+        'cespare/vim-toml'
+    }
+    use {
+        'dense-analysis/ale'
+    }
     -- [[ Dev ]]
     use 'windwp/nvim-autopairs'                    -- auto close brackets, etc.
     use '0xHyoga/starknet-vim'                     -- write Cairo
